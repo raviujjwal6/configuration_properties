@@ -3,7 +3,7 @@ spring:
     name: school-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/DB_NAME
+    url: jdbc:mysql://localhost:3306/school-service?createDatabaseIfNotExist=true
     username: root
     password: root
 
