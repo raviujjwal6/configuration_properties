@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user-car-booking?createDatabaseIfNotExist=true
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  boot:
+    admin:
+      client:
+        url:
+          - http://localhost:1111
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
